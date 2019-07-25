@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b1b277d77e848e6bf9e920c33758d86",
+    "revision": "cfc703da3cf8ceb90eae8c2f5153fa18",
     "url": "/for-drizzle/index.html"
   },
   {
-    "revision": "4530abe506331681f6c4",
+    "revision": "3f7f08c7b61e871ee1c1",
     "url": "/for-drizzle/static/css/main.838641d9.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/for-drizzle/static/js/2.b0e7542f.chunk.js"
   },
   {
-    "revision": "4530abe506331681f6c4",
-    "url": "/for-drizzle/static/js/main.dd930ddc.chunk.js"
+    "revision": "3f7f08c7b61e871ee1c1",
+    "url": "/for-drizzle/static/js/main.bb82cb67.chunk.js"
   },
   {
     "revision": "a870000c42823c589747",
