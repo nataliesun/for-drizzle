@@ -6,13 +6,15 @@ import AddressApiService from '../../services/address-api-service';
 import Forecast from '../../components/Forecast/Forecast';
 
 
+
 class LandingPage extends Component {
   state = {
     foreCastHidden: true,
     moisture: 0,
     forecast: {},
     img: '',
-    loading: false
+    loading: false,
+
   }
   handleSubmit = (ev) => {
     ev.preventDefault()
@@ -37,20 +39,14 @@ class LandingPage extends Component {
       })
   }
 
-  componentDidMount() {
 
 
-  }
   render() {
     const { moisture, forecast, img, loading } = this.state
-    const submitIcon = loading ? <FontAwesomeIcon icon="spinner" className="fa-icon" pulse /> : <FontAwesomeIcon icon={['far', "arrow-alt-circle-right"]} className="fa-icon" />
+    const submitIcon = loading ? <FontAwesomeIcon icon="spinner" className="fa-icon" pulse /> : <FontAwesomeIcon icon={['far', "arrow-alt-circle-right"]} className="fa-icon" />;
+    
     return (
       <div className="LandingPage">
-        <main>
-          <nav>
-            <h1><FontAwesomeIcon icon="tint" className="fa-tint"/> ForDrizzle</h1>
-            <FontAwesomeIcon icon="bars" />
-          </nav>
           <h2>Accurate weather and soil data monitoring</h2>
           <p>Check if you need to water your plants</p>
           <section className="form-section">
@@ -62,7 +58,7 @@ class LandingPage extends Component {
             </form>
           </section>
           <Forecast moisture={moisture} forecast={forecast} img={img}/>
-        </main>
+
       </div>
     );
   }
