@@ -1,0 +1,56 @@
+$app-max-width: 960px;
+$medium-space: 20px;
+$nav-height: 60px;
+$app-padding: 20px;
+$mobile-min-width: 768px;
+
+$text-color: white;
+$grey-color: rgb(73, 73, 73);
+
+$button-highlight: rgb(255, 121, 121);
+$light-blue:  rgb(87, 150, 244);
+$orange: #F47D57;
+$button-purple: #512dcf;
+$button-green: #ad3fa8;
+$main-text-color: #444;
+$blue: #105fd5;
+$blue2: #105fd560;
+$box-shadow: 0 4px 8px 0 rgba(59, 58, 58, 0.2), 0 6px 20px 0 rgba(49, 44, 44, 0.19);
+
+
+$main-font: 'Montserrat', sans-serif;
+$sub-font: 'Hind', sans-serif;
+
+$main-gradient: linear-gradient(159deg,#512dcf 31%,#10a3d5 100%) #512dcf;
+
+
+@mixin highlighted-button($color: $button-purple) {
+
+  background: $color;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  transition: .5s;
+
+  &:hover {
+      box-shadow: none;
+      transform: translate(4px, 2px);
+    }
+
+}
+
+@mixin big-input {
+    border: 3px solid $text-color;
+    border-radius: 5px;
+    background: none;
+    height: 40px;
+    width: 100%;
+    color: $text-color;
+    font-size: 16px;
+    padding: 0 20px;
+}
+

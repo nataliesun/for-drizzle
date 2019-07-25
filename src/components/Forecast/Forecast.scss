@@ -1,0 +1,104 @@
+$boxColor:#f1f1f1;
+$waterFColor:#209cff;
+$waterBColor:#68e0cf;
+   
+.Forecast {
+  // border: 1px solid rgb(55, 62, 160);
+//  padding-top: 6vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+  // max-height: 70vh;
+  p {
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 4px;
+    padding:  .4em 1.2em;
+    display: inline-block;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+    p {
+      margin-bottom: 2vh;
+    }
+
+    border-radius: 40px;
+    padding-bottom: 4vh;
+  }
+}
+.WaterMeter {
+  // outline: 1px dotted red;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  margin-bottom: 2vh;
+}
+.box{
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $boxColor;
+  border-radius:100%;
+  overflow: hidden; 
+  .percent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center; 
+    color:#fff;
+    font-size:64px;
+  } 
+  .water{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:2;
+    width: 100%;
+    height: 100%;
+    transform:translate(0,100%);
+    background:$waterFColor;
+    transition: all .3s;
+    &_wave{
+      width: 200%;
+      position: absolute;
+      bottom: 100%;
+      &_back {
+        right: 0;
+        fill: $waterBColor;
+        animation: wave-back 1.4s infinite linear;
+      }
+      &_front {
+        left: 0;
+        fill: $waterFColor;
+        margin-bottom: -1px;
+        animation: wave-front .7s infinite linear;
+      }
+    }
+  }
+}
+@keyframes wave-front {
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes wave-back {
+  100% {
+    transform: translate(50%, 0);
+  }
+  
+}
