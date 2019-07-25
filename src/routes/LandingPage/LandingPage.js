@@ -38,7 +38,8 @@ class LandingPage extends Component {
   }
 
   componentDidMount() {
-   
+
+
   }
   render() {
     const { moisture, forecast, img, loading } = this.state

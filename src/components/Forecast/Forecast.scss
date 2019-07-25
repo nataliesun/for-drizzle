@@ -4,18 +4,22 @@ $waterBColor:#68e0cf;
    
 .Forecast {
   // border: 1px solid rgb(55, 62, 160);
-//  padding-top: 6vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
   background: white;
   // max-height: 70vh;
+  border-radius: 40px;
   p {
     border: 1px solid rgb(223, 223, 223);
     border-radius: 4px;
     padding:  .4em 1.2em;
     display: inline-block;
+    margin-bottom: 2vh;
   }
 
   img {

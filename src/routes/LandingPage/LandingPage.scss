@@ -2,11 +2,13 @@
 
 
 .LandingPage {
+  
   display: flex;
+  max-width: 100vw;
   font-family: 'Open Sans', sans-serif;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
   min-height: 100vh;
 
@@ -14,7 +16,7 @@
   margin: 6vh 4% 6vh;
   // border: 1px dotted red;
   background: white;
-  width: 100%;
+  width: 96%;;
   border-radius: 40px;
   -webkit-box-shadow: -1px 10px 22px -5px rgba(0,0,0,0.64);
   -moz-box-shadow: -1px 10px 22px -5px rgba(0,0,0,0.64);
@@ -46,7 +48,7 @@
       justify-content: center;
       form {
         display: flex;
-        width: 350px;
+        // width: 350px;
         margin-bottom: 3vh;
         padding: .75em;
         background: white;
