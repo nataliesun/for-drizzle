@@ -11,13 +11,14 @@ class NavBar extends Component {
     const navClasses = this.props.hidden ? "side-bar hidden" : "side-bar";
     return (
       <>
-      <div className={navClasses}>
-        <ul>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><FontAwesomeIcon icon="chalkboard" /> Learn</li>
+        <div className={navClasses}>
+          <ul>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/learn"><FontAwesomeIcon icon="chalkboard" /> Learn</NavLink></li>
             <li><a href="https://github.com/nataliesun/for-drizzle" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="code-branch" /> Github</a></li>
-        </ul>
-      </div>
+          </ul>
+        </div>
       </>
     );
   }

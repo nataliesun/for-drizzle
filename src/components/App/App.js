@@ -5,6 +5,8 @@ import NavBar from '../NavBar/NavBar'
 import LandingPage from '../../routes/LandingPage/LandingPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AboutPage from '../../routes/AboutPage/AboutPage';
+import LearnPage from '../../routes/LearnPage/LearnPage';
 
 class App extends React.Component {
   state = {
@@ -22,18 +24,19 @@ class App extends React.Component {
       <div className="App">
         <NavBar hidden={!navOpen} />
         <main className={mainClasses}>
-        <header className="App__header">
-          <h1><FontAwesomeIcon icon="tint" className="fa-tint" /> ForDrizzle</h1>
-          <FontAwesomeIcon icon="bars" className="fa-bars" onClick={(ev) => this.onNavClick(ev)} />
-        </header>
-  
+          <header className="App__header">
+            <h1><FontAwesomeIcon icon="tint" className="fa-tint" /> ForDrizzle</h1>
+            <FontAwesomeIcon icon="bars" className="fa-bars" onClick={(ev) => this.onNavClick(ev)} />
+          </header>
+
           {this.state.hasError && (
             <p className="red">There was an error! Oh no!</p>
           )}
-  
-          <Switch>
 
+          <Switch>
             <Route exact path={'/'} component={LandingPage} />
+            <Route path={'/about'} component={AboutPage} />
+            <Route path={'/learn'} component={LearnPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </main>

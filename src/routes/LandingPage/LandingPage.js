@@ -47,7 +47,7 @@ class LandingPage extends Component {
     
     return (
       <div className="LandingPage">
-          <h2>Accurate weather and soil data monitoring</h2>
+          <h2>Accurate weather and soil monitoring</h2>
           <p>Check if you need to water your plants</p>
           <section className="form-section">
             <form onSubmit={(ev) => this.handleSubmit(ev)}>

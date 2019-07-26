@@ -18,6 +18,13 @@
     justify-content: space-around;
     height: 94%;
     transition-duration: 1.5s;
+    li, a {
+      text-decoration: none;
+      color: $grey;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
