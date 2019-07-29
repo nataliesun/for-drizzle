@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/for-drizzle/static/css/main.e0ca243e.chunk.css",
-    "main.js": "/for-drizzle/static/js/main.23883d0f.chunk.js",
-    "main.js.map": "/for-drizzle/static/js/main.23883d0f.chunk.js.map",
+    "main.css": "/for-drizzle/static/css/main.1f13e64e.chunk.css",
+    "main.js": "/for-drizzle/static/js/main.fc9cbaff.chunk.js",
+    "main.js.map": "/for-drizzle/static/js/main.fc9cbaff.chunk.js.map",
     "runtime~main.js": "/for-drizzle/static/js/runtime~main.6af8f225.js",
     "runtime~main.js.map": "/for-drizzle/static/js/runtime~main.6af8f225.js.map",
     "static/js/2.5634038f.chunk.js": "/for-drizzle/static/js/2.5634038f.chunk.js",
     "static/js/2.5634038f.chunk.js.map": "/for-drizzle/static/js/2.5634038f.chunk.js.map",
     "index.html": "/for-drizzle/index.html",
-    "precache-manifest.016c72144f6db6ea7138960a968476d5.js": "/for-drizzle/precache-manifest.016c72144f6db6ea7138960a968476d5.js",
+    "precache-manifest.e143c00cd4880242ed0159bef2bebfab.js": "/for-drizzle/precache-manifest.e143c00cd4880242ed0159bef2bebfab.js",
     "service-worker.js": "/for-drizzle/service-worker.js",
-    "static/css/main.e0ca243e.chunk.css.map": "/for-drizzle/static/css/main.e0ca243e.chunk.css.map",
+    "static/css/main.1f13e64e.chunk.css.map": "/for-drizzle/static/css/main.1f13e64e.chunk.css.map",
     "static/media/undraw_Firmware_jw6u.svg": "/for-drizzle/static/media/undraw_Firmware_jw6u.25329256.svg",
     "static/media/undraw_startled.svg": "/for-drizzle/static/media/undraw_startled.c9622e9c.svg"
   }
