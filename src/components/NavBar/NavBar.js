@@ -7,11 +7,14 @@ import './NavBar.scss';
 class NavBar extends Component {
 
 
+
+
   render() {
     const navClasses = this.props.hidden ? "side-bar hidden" : "side-bar";
     return (
       <>
         <div className={navClasses}>
+          <span onClick={this.props.handleNavClose}><FontAwesomeIcon icon="times" /></span>
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>

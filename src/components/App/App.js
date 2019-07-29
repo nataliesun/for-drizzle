@@ -13,16 +13,18 @@ class App extends React.Component {
     error: null,
     navOpen: false
   }
-  onNavClick(ev) {
+  onNavClick = (ev) => {
     this.setState({ navOpen: !this.state.navOpen })
   }
+
+
 
   render() {
     const { navOpen } = this.state;
     const mainClasses = navOpen ? "main-nav-shift" : '';
     return (
       <div className="App">
-        <NavBar hidden={!navOpen} />
+        <NavBar hidden={!navOpen} handleNavClose={this.onNavClick} />
         <main className={mainClasses}>
           <header className="App__header">
             <h1><FontAwesomeIcon icon="tint" className="fa-tint" /> ForDrizzle</h1>

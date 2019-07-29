@@ -7,7 +7,7 @@ import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 
 import {
-  faBars, faTint, faSpinner, faChalkboard, faCodeBranch,
+  faBars, faTint, faSpinner, faChalkboard, faCodeBranch, faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
@@ -18,13 +18,14 @@ library.add(
   faTint,
   faSpinner,
   faChalkboard,
-  faCodeBranch
+  faCodeBranch,
+  faTimes
 )
 
 ReactDOM.render(
   <BrowserRouter basename="/for-drizzle/">
 
-        <App />
+    <App />
 
   </BrowserRouter>
   , document.getElementById('root'));

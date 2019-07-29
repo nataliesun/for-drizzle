@@ -4,7 +4,7 @@ class LearnPage extends Component {
   render() {
     return (
       <div className="LearnPage">
-        <img src={firmware} alt="firmware" height="350px" />
+        <img src={firmware} alt="firmware" style={{ height: "30vh" }} />
         <figcaption style={{ margin: "4vh" }}>Coming soon!</figcaption>
       </div>
     );

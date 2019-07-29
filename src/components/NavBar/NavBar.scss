@@ -11,6 +11,15 @@
   margin-top: 6vh;
   border-radius: 40px;
   transition-duration: 1.5s;
+  span {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.8em;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   ul {
     color: black;
     display: flex;
@@ -29,6 +38,16 @@
 }
 
 .hidden {
-  transform: translateX(18vw);
+  transform: translateX(18vw)
+}
 
+@media screen and (max-width: 375px) {
+  .side-bar {
+    z-index: 100;
+    width: 45vw;
+    background: rgb(235, 235, 235);
+  } 
+  .hidden {
+    transform: translateX(47vw)
+  }
 }
