@@ -31,9 +31,13 @@ $waterBColor:#68e0cf;
     p {
       margin-bottom: 2vh;
     }
-
     border-radius: 40px;
     padding-bottom: 4vh;
+    img {
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    margin: 2vh 20px;
+    };
   }
 }
 .WaterMeter {
