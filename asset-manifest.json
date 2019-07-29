@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/for-drizzle/static/css/main.afaec298.chunk.css",
+    "main.css": "/for-drizzle/static/css/main.a4f2b009.chunk.css",
     "main.js": "/for-drizzle/static/js/main.6dc73562.chunk.js",
     "main.js.map": "/for-drizzle/static/js/main.6dc73562.chunk.js.map",
     "runtime~main.js": "/for-drizzle/static/js/runtime~main.6af8f225.js",
@@ -8,9 +8,9 @@
     "static/js/2.5634038f.chunk.js": "/for-drizzle/static/js/2.5634038f.chunk.js",
     "static/js/2.5634038f.chunk.js.map": "/for-drizzle/static/js/2.5634038f.chunk.js.map",
     "index.html": "/for-drizzle/index.html",
-    "precache-manifest.60b5a80cc2ef4ba70828353cbc5e936d.js": "/for-drizzle/precache-manifest.60b5a80cc2ef4ba70828353cbc5e936d.js",
+    "precache-manifest.677ebb3d5a2903d64b328321bd9efbc9.js": "/for-drizzle/precache-manifest.677ebb3d5a2903d64b328321bd9efbc9.js",
     "service-worker.js": "/for-drizzle/service-worker.js",
-    "static/css/main.afaec298.chunk.css.map": "/for-drizzle/static/css/main.afaec298.chunk.css.map",
+    "static/css/main.a4f2b009.chunk.css.map": "/for-drizzle/static/css/main.a4f2b009.chunk.css.map",
     "static/media/undraw_Firmware_jw6u.svg": "/for-drizzle/static/media/undraw_Firmware_jw6u.25329256.svg",
     "static/media/undraw_startled.svg": "/for-drizzle/static/media/undraw_startled.c9622e9c.svg"
   }
