@@ -5,7 +5,7 @@
 ## About ForDrizzle
 With For Drizzle, input an address to find out whether or not you should water your plants. For Drizzle will look up the current moisture content of the soil and the rain forecast and give a recommendation.
 
-<img src="src/assets/for-drizzle.png" width="450px">
+<img src="./src/assets/for-drizzle.png" width="450px">
 
 ### Soil moisture content
 Using [Agromonitoring’s Soil Conditions API](https://agromonitoring.com/api/current-soil), For Drizzle will find out the moisture content (in m^3 of water/m^3 of soil) for the given address. These readings are taken twice a day. Ideal soil moisture content varies due to a number of factors but for most soil types used for growing plants around 25% will be adequate. If the moisture content is over this number, For Drizzle will state that watering is not necessary.
