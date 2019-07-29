@@ -5,10 +5,13 @@ import Orbit from '../../assets/Orbit';
 import GoogleMaps from '../../assets/GoogleMaps';
 
 class AboutPage extends Component {
+  handleCardClick = (ev) => {
+    console.log("hi"
+      )  }
   render() {
     return (
       <div className="AboutPage">
-        <div className="flip-card" >
+        <div className="flip-card" onClick={this.handleCardClick}>
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <GoogleMaps />
