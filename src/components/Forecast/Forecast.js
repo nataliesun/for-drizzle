@@ -13,7 +13,7 @@ class Forecast extends Component {
     const { moisture, forecast, img } = this.props
     // let rain = forecast.probability ? 'yes' : 'no'
     let suggestion = moisture >= .30 || forecast.probability ? `Don't water` : `Water`;
-    let pClasses = suggestion === `Water` ? `water` : `dont`;
+    let pClasses = suggestion === `Water` ? `dowater` : `dont`;
     return (
       <section className="Forecast">
         <div className="forecast-prediction">
