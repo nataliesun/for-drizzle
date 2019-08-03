@@ -17,6 +17,7 @@ class WaterMeter extends Component {
             <div className="percentNum" id="count">0</div>
             <div className="percentB">%</div>
           </div>
+          <p id="moisture-caption">Soil Moisture</p>
           <div id="water" className="water">
             <svg viewBox="0 0 560 20" className="water_wave water_wave_back">
               <use href="#wave"></use>

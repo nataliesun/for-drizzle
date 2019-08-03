@@ -24,9 +24,7 @@ library.add(
 
 ReactDOM.render(
   <BrowserRouter basename="/for-drizzle/">
-
     <App />
-
   </BrowserRouter>
   , document.getElementById('root'));
 

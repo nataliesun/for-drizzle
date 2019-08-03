@@ -19,17 +19,18 @@ class LandingPage extends Component {
   handleSubmit = (ev) => {
     ev.preventDefault()
     const zip = ev.target.zipcode.value
-    this.setState({loading: true})
+    this.setState({ loading: true })
     AddressApiService.getPolygon(zip)
       .then(res => {
-        this.setState({...res, loading: false})
+        this.setState({ ...res, loading: false })
         let cnt = document.getElementById("count");
+        cnt.innerText = 0;
         let water = document.getElementById("water");
         let percent = cnt.innerText;
         let interval;
         interval = setInterval(function () {
-            percent++;
-      
+          percent++;
+
           cnt.innerHTML = percent;
           water.style.transform = 'translate(0,' + (100 - percent) + '%)';
           if (percent === Math.round(res.moisture * 100)) {
@@ -44,20 +45,20 @@ class LandingPage extends Component {
   render() {
     const { moisture, forecast, img, loading } = this.state
     const submitIcon = loading ? <FontAwesomeIcon icon="spinner" className="fa-icon" pulse /> : <FontAwesomeIcon icon={['far', "arrow-alt-circle-right"]} className="fa-icon" />;
-    
+
     return (
       <div className="LandingPage">
-          <h2>Accurate weather and soil monitoring</h2>
-          <p>Check if you need to water your plants</p>
-          <section className="form-section">
-            <form onSubmit={(ev) => this.handleSubmit(ev)}>
-              <input type="zipcode" placeholder="Zip code" id="zipcode" required/>
-              <button type="submit">
-               {submitIcon}
-              </button>
-            </form>
-          </section>
-          <Forecast moisture={moisture} forecast={forecast} img={img}/>
+        <h2>Accurate weather and soil monitoring</h2>
+        <p>Check if you need to water your plants</p>
+        <section className="form-section">
+          <form onSubmit={(ev) => this.handleSubmit(ev)}>
+            <input type="zipcode" placeholder="Zip code" id="zipcode" required />
+            <button type="submit">
+              {submitIcon}
+            </button>
+          </form>
+        </section>
+        <Forecast moisture={moisture} forecast={forecast} img={img} />
 
       </div>
     );
