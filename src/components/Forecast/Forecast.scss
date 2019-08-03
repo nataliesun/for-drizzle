@@ -76,8 +76,12 @@ $waterBColor:#68e0cf;
   position: relative;
   margin-bottom: 2vh;
   #moisture-caption {
-   margin-top: 11em;
+  position: absolute;
+  color: white;
+   left: 4em;
+   bottom: 3em;
    border: none;
+   z-index: 100;
   }
 }
 .box{
