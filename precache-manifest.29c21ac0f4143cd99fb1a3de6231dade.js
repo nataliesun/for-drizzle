@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56e7142237c6118757caa8619ad840b3",
+    "revision": "bedaecccdeed994a625670f46b1f76fd",
     "url": "/for-drizzle/index.html"
   },
   {
-    "revision": "360c991724e01109ab24",
-    "url": "/for-drizzle/static/css/main.64760e98.chunk.css"
+    "revision": "3b342b73b070aed22d2d",
+    "url": "/for-drizzle/static/css/main.64907455.chunk.css"
   },
   {
     "revision": "6b5742adee6f3a6dc4ce",
     "url": "/for-drizzle/static/js/2.5634038f.chunk.js"
   },
   {
-    "revision": "360c991724e01109ab24",
-    "url": "/for-drizzle/static/js/main.d39a8f51.chunk.js"
+    "revision": "3b342b73b070aed22d2d",
+    "url": "/for-drizzle/static/js/main.2cdbb75a.chunk.js"
   },
   {
     "revision": "a870000c42823c589747",
